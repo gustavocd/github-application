@@ -68,6 +68,9 @@ export default {
     toggleSideNav () {
       this.$refs.sideNav.toggle()
     },
+    closeSidenav () {
+      this.$refs.sideNav.close()
+    },
     setUsername: _.debounce(function (username) {
       if (username) {
         this.fetchUser(username)
